@@ -7,8 +7,12 @@ const ChoiceItem = props => {
   const onClickingChoice = () => {
     choiceClicked(id)
   }
+
   return (
-    <ChoiceButton onClick={onClickingChoice}>
+    <ChoiceButton
+      onClick={onClickingChoice}
+      data-testid={`${id.toLowerCase()}Button`}
+    >
       <ChoiceImage src={imageUrl} alt={id} />
     </ChoiceButton>
   )
