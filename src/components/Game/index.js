@@ -138,6 +138,7 @@ class Game extends Component {
           </div>
         )}
         <ReactPopup />
+        <ScoreCardHeading> by Saloni Chandra </ScoreCardHeading>
       </MainContainer>
     )
   }
